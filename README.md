@@ -49,7 +49,6 @@ The aim of this project is to build a fully interactive front-end only website u
 
 ### Frameworks, Libraries & programs Used
 - [Bootstrap 4.5.3:](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)) This project uses the Bootstrap framework to assist with build a mobile first full responsive website.
-- [jQuery:](https://en.wikipedia.org/wiki/JQuery) This project uses jQuery to modify the HTML & CSS to allow the user to interact with and play the memory-based game.
 - [Google Fonts:](https://fonts.google.com/) Google Fonts were used to import the '' font into the style.CSS file which is used on all pages throughout the project.
 - [Font Awesome:](https://fontawesome.com/) Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 - [Git:](https://git-scm.com/) Git was used for version control by utilizing the GitPod terminal to commit to Git and Push to GitHub.
@@ -103,4 +102,15 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ## Credits
 
 ### Font
-- “Gloria Hallelujah” font taken directly via Google Fonts - https://fonts.google.com/specimen/Gloria+Hallelujah?preview.text_type=custom#standard-styles Licence details located here - https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+- “Gloria Hallelujah” font taken directly via Google Fonts - https://fonts.google.com/specimen/Gloria+Hallelujah?preview.text_type=custom#standard-styles Licence details - https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
+### Images
+- Bee - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=311047">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=311047">Pixabay</a>
+- Elephant - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=35527">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=35527">Pixabay</a>
+- Pig - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=47920">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=47920">Pixabay</a>
+- Snake - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=312561">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=312561">Pixabay</a>
+- Turtle - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=310825">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=310825">Pixabay</a>
+- Dog - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=47957">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=47957">Pixabay</a>
+- Rabbit - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=30479">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=30479">Pixabay</a>
+- Owl - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=42851">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=42851">Pixabay</a>
+- Card - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=48980">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=48980">Pixabay</a>
