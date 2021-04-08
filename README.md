@@ -1,6 +1,6 @@
 <h1 align="center">David Harris - Milestone Project 2</h1>
 
-The aim of this project is to build a fully interactive front-end only website using the skills that I have learnt with HTML, CSS & JavaScript. I will be building a memory based visual card game. The purpose of the game is firstly to be a fun and enjoyable game but to also be used for education for younger children. The game will be designed with the view to aid in early learning and development for younger children.
+The aim of this project is to build a fully interactive front-end only website using the skills that I have learnt with HTML, CSS, JavaScript & BootStrap. I will be building a memory based visual card game. The purpose of the game is firstly to be a fun and enjoyable game but to also be used for education for younger children. The game will be designed with the view to aid in early learning and development for younger children.
 
 ## User Experience (UX)
 
@@ -48,7 +48,8 @@ The aim of this project is to build a fully interactive front-end only website u
 - [JavaScript:](https://en.wikipedia.org/wiki/JavaScript) This project uses JavaScript to modify the HTML & CSS to allow the user to interact with and play the memory-based game.
 
 ### Frameworks, Libraries & programs Used
-- [Google Fonts:](https://fonts.google.com/) Google Fonts were used to import the '' font into the style.CSS file which is used on all pages throughout the project.
+- [Bootstrap 4.5.3:](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)) Bootstrap framework assists with a mobile first fully responsive website.
+- [Google Fonts:](https://fonts.google.com/) Google Fonts were used to import the "Gloria Hallelujah" font into the style.CSS file which is used on all pages throughout the project.
 - [Font Awesome:](https://fontawesome.com/) Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 - [Git:](https://git-scm.com/) Git was used for version control by utilizing the GitPod terminal to commit to Git and Push to GitHub.
 - [GitHub:](https://github.com/) GitHub is used to store the projects code after being pushed from Git.
