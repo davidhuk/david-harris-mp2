@@ -1,5 +1,4 @@
-/* force html to scale to 100% of page */
-html {min-height: 100vh;}
-
-/* font applies to all text on website */
-body {font-family: 'Gloria Hallelujah', cursive, sans-serif;}
+/* applies to enitre body content */
+body {
+    font-family: 'Gloria Hallelujah', cursive, sans-serif;
+}
