@@ -24,10 +24,46 @@ body {
 
 /* found box-shadow code here - https://www.tutorialrepublic.com/faq/how-to-place-border-inside-of-div-element-using-css.php#:~:text=Answer%3A%20Use%20the%20CSS%20box,property%20with%20a%20negative%20value. */
 .card:hover {
-    box-shadow: inset 0px 0px 0px 5px red;
+    box-shadow: inset 0px 0px 0px 5px yellow;
 }
 
-@media only screen and (max-width: 576px) {
+.red {
+    background-color: red;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.black {
+     background-color: black;
+ }
+
+ @media only screen and (max-width: 576px) {
   .card {
     display: inline-block;
     width: 5rem;
