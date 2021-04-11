@@ -63,20 +63,16 @@ body {
      background-color: black;
  }
 
- @media only screen and (max-width: 576px) {
+ @media only screen and (max-width: 680px) {
   .card {
-    display: inline-block;
     width: 5rem;
     height: 5rem;
-    background-color: black;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .card {
-    display: inline-block;
     width: 4rem;
     height: 4rem;
-    background-color: black;
   }
 }
