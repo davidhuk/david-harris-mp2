@@ -10,3 +10,32 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.row {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    background-color: black;
+}
+
+@media only screen and (max-width: 576px) {
+  .card {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .card {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-color: black;
+  }
+}
