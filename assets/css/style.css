@@ -1,4 +1,12 @@
-/* applies to enitre body content */
 body {
-    font-family: 'Gloria Hallelujah', cursive, sans-serif;
+  font-family: 'Gloria Hallelujah', cursive, sans-serif;
+}
+
+#game-page-title {
+    text-align: center;
+}
+
+#game-time-info-box {
+    display: flex;
+    justify-content: space-between;
 }

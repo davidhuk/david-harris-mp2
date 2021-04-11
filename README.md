@@ -1,6 +1,6 @@
 <h1 align="center">David Harris - Milestone Project 2</h1>
 
-The aim of this project is to build a fully interactive front-end only website using the skills that I have learnt with HTML, CSS, JavaScript & BootStrap. I will be building a memory based visual card game. The purpose of the game is firstly to be a fun and enjoyable game but to also be used for education for younger children. The game will be designed with the view to aid in early learning and development for younger children.
+The aim of this project is to build a fully interactive front-end only website using the skills that I have learnt with HTML, CSS & JavaScript. I will be building a memory based visual card game. The purpose of the game is firstly to be a fun and enjoyable game but to also be used for education for younger children. The game will be designed with the view to aid in early learning and development for younger children.
 
 ## User Experience (UX)
 
@@ -17,13 +17,13 @@ The aim of this project is to build a fully interactive front-end only website u
 
 #### Frequent User Goals
 - As a frequent visitor I want to be able to see if I can beat my all-time high time score of the game over the course of my multiple visits to the website to enjoy the game.
-- As a frequent visitor I want to see if I can notice an improvement to my pattern matching skills because I have been training by playing the game many times.
+- As a frequent visitor I want to see if I can notice an improvement to my pattern matching skills because I have been training my memory abilities by playing the game many times.
 
 ### Design
 
 #### Colour Scheme
 - I will be using bold and bright colours to have the content of the website be visually appealing for a younger audience. I have done some research into games aimed at younger children and they all use various colour schemes but always have bright and bold colours.
-- The theme of the game will be cartoon based animals. I have done some research into younger children’s books and a lot of books involve cartoon animals. I would like to continue this theme as the target audience of younger children would already been accustomed and have an established appreciation of this theme.
+- The theme of the game was going to be cartoon based animals. I had done some research into younger children’s books and a lot of books involve cartoon animals. Due to time constraints with the project deadline, I decided to swap to a basic colour matching theme to achieve a minimum viable product build.
 
 #### Typography
 - The font that I have chosen is for this website is “Gloria Hallelujah” via “Google Fonts”. I have chosen this font to appeal to the younger children. I like that this is a non-business, non-serious font. I find that it is a relaxed font and leads itself well to a younger audience.
@@ -48,12 +48,16 @@ The aim of this project is to build a fully interactive front-end only website u
 - [JavaScript:](https://en.wikipedia.org/wiki/JavaScript) This project uses JavaScript to modify the HTML & CSS to allow the user to interact with and play the memory-based game.
 
 ### Frameworks, Libraries & programs Used
-- [Bootstrap 4.5.3:](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)) Bootstrap framework assists with a mobile first fully responsive website.
 - [Google Fonts:](https://fonts.google.com/) Google Fonts were used to import the "Gloria Hallelujah" font into the style.CSS file which is used on all pages throughout the project.
 - [Font Awesome:](https://fontawesome.com/) Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 - [Git:](https://git-scm.com/) Git was used for version control by utilizing the GitPod terminal to commit to Git and Push to GitHub.
 - [GitHub:](https://github.com/) GitHub is used to store the projects code after being pushed from Git.
 - [Balsamiq:](https://balsamiq.com/) Balsamiq was used to create the wireframes during the design process.
+
+## Testing
+
+### Errors Testing During build
+- Bootstrap, Grid Layout, Multiple Stacked Images. I struggled with getting 2 x images to stack over each other, take up the same size, remain hidden then flip. I encountered many problems with grid alignment at various view sizes and layouts. I ended up spending way too much time troubleshooting HTML, CSS, Bootstrap. This was detrimental to the time scale for project deadline and was not a requirement as this project is focused on the JavaScript. I decided to remove Bootstrap and the images.
 
 ## Deployment
 
@@ -104,13 +108,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Font
 - “Gloria Hallelujah” font taken directly via Google Fonts - https://fonts.google.com/specimen/Gloria+Hallelujah?preview.text_type=custom#standard-styles Licence details - https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 
-### Images
-- Bee - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=311047">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=311047">Pixabay</a>
-- Elephant - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=35527">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=35527">Pixabay</a>
-- Pig - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=47920">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=47920">Pixabay</a>
-- Snake - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=312561">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=312561">Pixabay</a>
-- Turtle - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=310825">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=310825">Pixabay</a>
-- Dog - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=47957">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=47957">Pixabay</a>
-- Rabbit - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=30479">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=30479">Pixabay</a>
-- Owl - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=42851">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=42851">Pixabay</a>
-- Card - Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=48980">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=48980">Pixabay</a>
+## Conclusion
+- Bootstrap - Stacked multiple images & Grid Layout. My initial idea for this project was to use an animal memory game, have an image of a playing card as a default on page load, once clicked, flip and show an image of an animal. I had issues with getting this lined up in a grid within Bootstrap, then scaling images correctly, then hiding and showing images. I would be able to fix these given more time but decided against this due to 1. The images not being required for the project, 2. Needed to focus of the JavaScript part of the game to get a function game rather than a nice-looking game and 3. The project deadline fast approaching, I needed to focus on a producing a minimum viable build product that fits the criteria.
+- Time management Issues & Initial Project Miss-Scoped. This module focuses on the JavaScript aspect of interaction and manipulation of the DOM. I am still learning HTML, CSS, Bootstrap and have added in JavaScript to this product. I am still struggling and learning the basics of all these languages. I started this project slightly later than planned as I needed to take more time to really explore and understand the fundamentals of JavaScript, this led to me having a tighter deadline. The second mistake I made was not fully exploring the difficulties of having images for the game. It seemed easy enough but added a level of complexity that was not required for the project. I found that I was spending way too much time troubleshooting HTML, CSS & Bootstrap and not working on JavaScript, which is the primary driver for this product. I decided to reduce complexity and focus on a colour matching game and remove the images to allow me to explore the JavaScript.
