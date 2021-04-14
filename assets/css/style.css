@@ -19,6 +19,15 @@ body {font-family: 'Gloria Hallelujah', cursive, sans-serif;}
 /*Found box-shadow code here - https://www.tutorialrepublic.com/faq/how-to-place-border-inside-of-div-element-using-css.php#:~:text=Answer%3A%20Use%20the%20CSS%20box,property%20with%20a%20negative%20value. This was required due to the outside border moving the grid layout.*/
 .card:hover {box-shadow: inset 0px 0px 0px 5px yellow;}
 
+.user-matched-cards {
+    cursor: default;
+}
+
+.user-matched-cards:hover {
+    cursor: default;
+    box-shadow: none;
+}
+
 .red {background-color: red;}
 
 .teal {background-color: teal;}
