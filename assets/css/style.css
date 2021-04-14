@@ -1,19 +1,13 @@
-body {
-  font-family: 'Gloria Hallelujah', cursive, sans-serif;
-}
+body {font-family: 'Gloria Hallelujah', cursive, sans-serif;}
 
-#game-page-title {
-    text-align: center;
-}
+#game-page-title {text-align: center;}
 
 #game-time-info-box {
     display: flex;
     justify-content: space-between;
 }
 
-.row {
-    text-align: center;
-}
+.row {text-align: center;}
 
 .card {
     display: inline-block;
@@ -22,57 +16,37 @@ body {
     background-color: black;
 }
 
-/* found box-shadow code here - https://www.tutorialrepublic.com/faq/how-to-place-border-inside-of-div-element-using-css.php#:~:text=Answer%3A%20Use%20the%20CSS%20box,property%20with%20a%20negative%20value. */
-.card:hover {
-    box-shadow: inset 0px 0px 0px 5px yellow;
-}
+/*Found box-shadow code here - https://www.tutorialrepublic.com/faq/how-to-place-border-inside-of-div-element-using-css.php#:~:text=Answer%3A%20Use%20the%20CSS%20box,property%20with%20a%20negative%20value. This was required due to the outside border moving the grid layout.*/
+.card:hover {box-shadow: inset 0px 0px 0px 5px yellow;}
 
-.red {
-    background-color: red;
-}
+.red {background-color: red;}
 
-.teal {
-    background-color: teal;
-}
+.teal {background-color: teal;}
 
-.blue {
-    background-color: blue;
-}
+.blue {background-color: blue;}
 
-.orange {
-    background-color: orange;
-}
+.orange {background-color: orange;}
 
-.green {
-    background-color: green;
-}
+.green {background-color: green;}
 
-.purple {
-    background-color: purple;
-}
+.purple {background-color: purple;}
 
-.pink {
-    background-color: pink;
-}
+.pink {background-color: pink;}
 
-.aqua {
-    background-color: aqua;
-}
+.aqua {background-color: aqua;}
 
-.black {
-     background-color: black;
- }
+.black {background-color: black; }
 
- @media only screen and (max-width: 680px) {
-  .card {
-    width: 5rem;
-    height: 5rem;
-  }
+@media only screen and (max-width: 680px) {
+    .card {
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
-  .card {
-    width: 4rem;
-    height: 4rem;
-  }
+    .card {
+        width: 4rem;
+        height: 4rem;
+    }
 }
