@@ -2,18 +2,25 @@ var cardClicked = null; /*Needed to add null to enable logic for rule later to r
 
 function onCardClicked(event) {
     let target = event.currentTarget;
-    target.className = target.className.replace("black", "").trim(); /*Removes "black" css class from clicked square.*/
-    target.className += " user-matched-card"; /*Add css class to clicked square.*/
+
+    if (target.className.includes("disable-card-click")) {
+        return; /*Required to stop the code breaking between 1st & 2nd clicks*/
+    }
+
+    target.className = target.className.replace("black", "").trim(); /*Removes "black" css class from clicked square. This should sit outside of the logic below. The is because the remove "black" CSS class needs to run on every click. This saves duplicate code in the below rules.*/
 
     if (!cardClicked) {
-        console.log(target.getAttribute("data-card-color"));
-        console.log("This should be the first click color.") /*Testing logic works.*/
+        target.className += " disable-card-click"; /*Add css class to clicked square.*/
         cardClicked = target;
     } else if (cardClicked) {
         
         if (cardClicked.getAttribute("data-card-color") === target.getAttribute("data-card-color")) {
-            console.log(cardClicked.getAttribute("data-card-color"));
-            console.log("This is a confirmed match of 1st & 2nd color");/*Testing logic works.*/
+            target.className += " disable-card-click"; /*Add css class to clicked square.*/
+            cardClicked = null;
+            console.log("Confirmed correct color match.")
+        } else if (cardClicked.getAttribute("data-card-color") !== target.getAttribute("data-card-color")) {
+            cardClicked = null;
+            console.log("Confirmed incorrect color match.")
         }
     }
 }
