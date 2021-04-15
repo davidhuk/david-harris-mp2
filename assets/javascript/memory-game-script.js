@@ -1,4 +1,5 @@
 var cardClicked = null; /*Needed to add null to enable logic for rule later to run on 1st, then 2nd click for color match logic for the game.*/
+var gameWin = 0; /*Needed a variable to track total colors matched count to trigger the game win condition when all colors have been matched.*/
 
 function onCardClicked(event) {
     let target = event.currentTarget;
@@ -7,7 +8,7 @@ function onCardClicked(event) {
         return; /*Required to stop the code breaking between 1st & 2nd clicks*/
     }
 
-    target.className = target.className.replace("black", "").trim(); /*Removes "black" css class from clicked square. This should sit outside of the logic below. The is because the remove "black" CSS class needs to run on every click. This saves duplicate code in the below rules.*/
+    target.className = target.className.replace("black", "").trim(); /*Removes "black" CSS class from clicked square. This should sit outside of the logic below. The is because the remove "black" CSS class needs to run on every click. This saves duplicate code in the below rules.*/
 
     if (!cardClicked) {
         target.className += " disable-card-click";
@@ -22,7 +23,11 @@ function onCardClicked(event) {
         }, 550);
         else if (cardClicked.getAttribute("data-card-color") === target.getAttribute("data-card-color")) {
             target.className += " disable-card-click";
+            gameWin++;
             cardClicked = null;
         }
+    }
+    if (gameWin === 8) {
+        alert("TEST - You have won the game!"); /*Testing if game win condition triggers an alert.*/
     }
 }
