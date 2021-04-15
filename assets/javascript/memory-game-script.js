@@ -10,17 +10,17 @@ function onCardClicked(event) {
     target.className = target.className.replace("black", "").trim(); /*Removes "black" css class from clicked square. This should sit outside of the logic below. The is because the remove "black" CSS class needs to run on every click. This saves duplicate code in the below rules.*/
 
     if (!cardClicked) {
-        target.className += " disable-card-click"; /*Add css class to clicked square.*/
+        target.className += " disable-card-click";
         cardClicked = target;
     } else if (cardClicked) {
         
-        if (cardClicked.getAttribute("data-card-color") === target.getAttribute("data-card-color")) {
-            target.className += " disable-card-click"; /*Add css class to clicked square.*/
+        if (cardClicked.getAttribute("data-card-color") !== target.getAttribute("data-card-color")) {
+            cardClicked.className = cardClicked.className.replace('disable-card-click', '').trim() + ' black';
+            target.className = target.className.replace('disable-card-click', '').trim() + ' black';
             cardClicked = null;
-            console.log("Confirmed correct color match.")
-        } else if (cardClicked.getAttribute("data-card-color") !== target.getAttribute("data-card-color")) {
+        } else if (cardClicked.getAttribute("data-card-color") === target.getAttribute("data-card-color")) {
+            target.className += " disable-card-click";
             cardClicked = null;
-            console.log("Confirmed incorrect color match.")
         }
     }
 }
