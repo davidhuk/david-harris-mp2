@@ -11,14 +11,16 @@ function onCardClicked(event) {
 
     if (!cardClicked) {
         target.className += " disable-card-click";
-        cardClicked = target;
-    } else if (cardClicked) {
-        
-        if (cardClicked.getAttribute("data-card-color") !== target.getAttribute("data-card-color")) {
+        cardClicked = target;   
+    }
+    else if (cardClicked) {
+        /* Needed to add a timeout delay. This was to allow the 2nd clicked card to show the color before reverting back to black. Found an example here - "https://www.sitepoint.com/delay-sleep-pause-wait/#:~:text=The%20standard%20way%20of%20creating,()%20%3D%3E%20%7B%20console." */
+        if (cardClicked.getAttribute("data-card-color") !== target.getAttribute("data-card-color")) setTimeout(() => { 
             cardClicked.className = cardClicked.className.replace('disable-card-click', '').trim() + ' black';
             target.className = target.className.replace('disable-card-click', '').trim() + ' black';
             cardClicked = null;
-        } else if (cardClicked.getAttribute("data-card-color") === target.getAttribute("data-card-color")) {
+        }, 550);
+        else if (cardClicked.getAttribute("data-card-color") === target.getAttribute("data-card-color")) {
             target.className += " disable-card-click";
             cardClicked = null;
         }
