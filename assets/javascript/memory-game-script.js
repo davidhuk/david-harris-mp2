@@ -1,7 +1,11 @@
 var cardClicked = null; /*Needed to add null to enable logic for rule later to run on 1st, then 2nd click for color match logic for the game.*/
 var gameWin = 0; /*Needed a variable to track total colors matched count to trigger the game win condition when all colors have been matched.*/
+var gameRunning = false; /*Used to track if game is/is not in a running state to apply logic.*/
 
-function onCardClicked(event) {
+function playGameClick(event) {
+    
+    if(!gameRunning) return; /*Needed a way to disable game from working until button click. Located documentation here - "https://stackoverflow.com/questions/7130114/disable-onclick-until-js-function-is-done" */
+
     let target = event.currentTarget;
 
     if (target.className.includes("disable-card-click")) {
@@ -28,6 +32,11 @@ function onCardClicked(event) {
         }
     }
     if (gameWin === 8) {
+        gameRunning = false;
         alert("TEST - You have won the game!"); /*Testing if game win condition triggers an alert.*/
     }
+}
+
+function startGameButtonClick(event) {
+    gameRunning = true; /*Used to trigger the game start.*/
 }
