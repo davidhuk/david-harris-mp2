@@ -1,7 +1,10 @@
 var cardClicked = null; //Needed to add null to enable logic for rule later to run on 1st, then 2nd click for color match logic for the game.
 var gameWin = 0; //Needed a variable to track total colors matched count to trigger the game win condition when all colors have been matched.
 var gameRunning = false; //Used to track if game is/is not in a running state to apply logic.
+var gameStartModal = document.getElementById("game-start-modal"); //Used to enable JavaScript to modify "game-start-modal" hidden modal.
+var gameFinishModal = document.getElementById("game-finish-modal"); //Used to enable JavaScript to modify "game-finish-modal" hidden modal.
 
+//Run the game logic. This only runs when the user has clicked the "Start Game" button hidden in "game-start-modal" hidden modal.
 function playGameClick(event) {
     
     if(!gameRunning) return; //Needed a way to disable game from working until button click. Located documentation here - "https://stackoverflow.com/questions/7130114/disable-onclick-until-js-function-is-done"
@@ -21,8 +24,8 @@ function playGameClick(event) {
     else if (cardClicked) {
         //Needed to add a timeout delay. This was to allow the 2nd clicked card to show the color before reverting back to black. Found an example here - "https://www.sitepoint.com/delay-sleep-pause-wait/#:~:text=The%20standard%20way%20of%20creating,()%20%3D%3E%20%7B%20console."
         if (cardClicked.getAttribute("data-card-color") !== target.getAttribute("data-card-color")) setTimeout(() => { 
-            cardClicked.className = cardClicked.className.replace('disable-card-click', '').trim() + ' black';
-            target.className = target.className.replace('disable-card-click', '').trim() + ' black';
+            cardClicked.className = cardClicked.className.replace("disable-card-click", "").trim() + " black";
+            target.className = target.className.replace("disable-card-click", "").trim() + " black";
             cardClicked = null;
         }, 550);
         else if (cardClicked.getAttribute("data-card-color") === target.getAttribute("data-card-color")) {
@@ -33,15 +36,25 @@ function playGameClick(event) {
     }
     if (gameWin === 8) {
         gameRunning = false;
-        alert("TEST - You have won the game!");
+        gameFinishModal.style.display = "block";
     }
 }
 
-var gameStartModal = document.getElementById("game-start-modal");
+//Displays the "game-start-modal".
 function openGameStartGameModal() {
     gameStartModal.style.display = "block";
 }
 
+//Closes the "game-finish-modal" and resets the HTML DOM back to game start required conditions."
+function finishGameButtonClick() {
+    gameFinishModal.style.display = "none";
+    //Researched and found code below to reset all the DOM elements back to start condition logic. Required to enable game to be played on a loop. Documentation found here - "https://stackoverflow.com/questions/22270664/how-to-remove-a-class-from-elements-in-pure-javascript".
+    Array.from(document.querySelectorAll(".card")).forEach((el) => el.classList.remove("disable-card-click"));
+    Array.from(document.querySelectorAll(".card")).forEach((el) => el.classList.add("black"));
+    gameWin = 0;    
+}
+
+//Starts the game on user click.
 function startGameButtonClick() {
     gameStartModal.style.display = "none";
     gameRunning = true; //Used to trigger the game start condition.

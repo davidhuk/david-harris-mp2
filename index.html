@@ -22,8 +22,16 @@
 <div id="game-start-modal" class="modal">
     <div class="modal-content">
         <h2>Game Instructions</h2>
-        <p>The object of the game is to find all the matching coloured squares.<br><br>Once you have matched all the coloured squares you will have won the game.<br><br>Try and get the best time you can!<br><br>Press "Start Game play!"</p>
-        <button id="start-game" onclick="startGameButtonClick(event)">Start Game</button>
+        <p>The object of the game is to find all the matching coloured squares. Once you have matched all of the coloured squares you win.<br><br>Press the "Start Game!" button to being playing the game. Good luck!"</p>
+        <button onclick="startGameButtonClick(event)">Start Game!</button>
+    </div>
+</div>
+
+<div id="game-finish-modal" class="modal">
+    <div class="modal-content">
+        <h2>You Win!</h2>
+        <p>Congratulations you have found all the matched coloured squares and have won the game.<br><br>Total Time Taken = X</p>
+        <button onclick="finishGameButtonClick()">Play Again?</button>
     </div>
 </div>
 
@@ -54,8 +62,6 @@
     <div data-card-color="blue" class="card blue black" onclick="playGameClick(event)"></div>
     <div data-card-color="aqua" class="card aqua black" onclick="playGameClick(event)"></div>
 </div>
-
-
 
 <script src="assets/javascript/memory-game-script.js"></script>
 </body>
