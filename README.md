@@ -56,10 +56,13 @@ The aim of this project is to build a fully interactive front-end only website u
 
 ## Testing
 
-### Errors Testing During build
+### Errors During build
 - Bootstrap, Grid Layout, Multiple Stacked Images: I struggled with getting 2 x images to stack over each other, take up the same size, remain hidden then flip. I encountered many problems with grid alignment at various view sizes and layouts. I ended up spending way too much time troubleshooting HTML, CSS, Bootstrap. This was detrimental to the time scale for project deadline and was not a requirement as this project is focused on the JavaScript. I decided to remove Bootstrap and the images.
 - JavaScript: As the game needed to match 2 x colours, I needed a way to get HTML elements and compare them. I tried to use the class names, but it was not as simple as accessing by class name as this would mean I would have to code 8 or 16 different logic. I did some research and it seemed like using data type would be a basic method that I could use for the game. I used the following links - "https://www.w3schools.com/tags/att_data-.asp" & "https://stackoverflow.com/questions/20030162/getting-data-attribute-for-onclick-event-for-an-html-element" for guidance.
 - Game Timer: Timer keeps running after game win. I noticed that once the timer function is started it would not stop. I researched online and discovered that you can stop a JavaScript function with another function is running. I thought you could, so planned to call a function to stop the timer function on game win, but this is not possible. A solution was to force a refresh of the webpage to restart the game and all the code logic. Although this is not an ideal fix, for this project it is a perfect working solution to complete the game loop with a working timer.
+
+### Known Bugs
+- JavaScript: Multiple fast clicking. If a user clicks multiple squares in rapid succession, it can cause issues & bugs with the coloured squares. There is a delay timer for the code to revert CSS classes if no match is found. I have done some investigation to try and fix this but have not been able to come up with an answer without having to re-format the entire JavaScript code. The fix that I have in my head would be to add another new CSS class to disable mouse click events for all .card elements, apply it to all cards on mismatch (before the timer), then remove this CSS class from all the .card elements when the timer kicks in to run the delayed code. This would work, but I have tried and failed to patch this in time code during the timeframe of the delivery of this project. The game works flawlessly if the user is not clicking really, fast. For standard users/use (little children), I would not expect this to be a widely reported bug but would be one to work on and fix with 1st wave bug fixes in future build releases.
 
 ## Deployment
 
