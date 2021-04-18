@@ -15,7 +15,6 @@
 <div id="game-time-info-box">
     <button id="open-modal" onclick="openGameStartGameModal()">Start Game</button>
     <p>Current Time = <span id="seconds-counter">0 </span>Seconds</p>
-    <p>Best Time = X</p>
 </div>
 
 <!-- Hidden modal. Documentation located here - "https://www.w3schools.com/howto/howto_css_modals.asp" -->
@@ -30,7 +29,9 @@
 <div id="game-finish-modal" class="modal">
     <div class="modal-content">
         <h2>You Win!</h2>
-        <p>Congratulations you have found all the matched coloured squares and have won the game.<br><br>Total Time Taken = X</p>
+        <p>Congratulations you have found all the matched coloured squares and have won the game.</p>
+        <img src="assets/images/winner-medal.jpg" alt="Winner Medal!">
+        <br>
         <button onclick="finishGameButtonClick()">Play Again?</button>
     </div>
 </div>
