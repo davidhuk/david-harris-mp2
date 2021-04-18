@@ -183,6 +183,9 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Font
 - “Gloria Hallelujah” font taken directly via Google Fonts - https://fonts.google.com/specimen/Gloria+Hallelujah?preview.text_type=custom#standard-styles Licence details - https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 
+### Favicon
+- Favicon.ico was created by me via this free website - https://favicon.io/favicon-generator/ Terms of use located here - https://favicon.io/terms-of-use/
+
 ### Images
 - Winner Medal – Image by <a href="https://pixabay.com/users/axxlc-1861698/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1548239">AxxLC</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1548239">Pixabay</a>.
 
