@@ -58,4 +58,17 @@ function finishGameButtonClick() {
 function startGameButtonClick() {
     gameStartModal.style.display = "none";
     gameRunning = true; //Used to trigger the game start condition.
+    startGamePlayedSecondsTimer(); //Used to call the second timer count on game start click.
+}
+
+//Researched JavaScript count timers. Documentation found here – "https://stackoverflow.com/questions/37187504/javascript-second-counter".
+function startGamePlayedSecondsTimer() {
+    var seconds = 0;
+    var el = document.getElementById('seconds-counter');
+
+    function incrementSeconds() {
+        seconds += 1;
+        el.innerText = seconds + " ";
+    }
+    setInterval(incrementSeconds, 1000);
 }

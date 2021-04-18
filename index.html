@@ -14,7 +14,7 @@
 
 <div id="game-time-info-box">
     <button id="open-modal" onclick="openGameStartGameModal()">Start Game</button>
-    <p>Current Time = X</p>
+    <p>Current Time = <span id="seconds-counter">0 </span>Seconds</p>
     <p>Best Time = X</p>
 </div>
 
@@ -22,7 +22,7 @@
 <div id="game-start-modal" class="modal">
     <div class="modal-content">
         <h2>Game Instructions</h2>
-        <p>The object of the game is to find all the matching coloured squares. Once you have matched all of the coloured squares you win.<br><br>Press the "Start Game!" button to being playing the game. Good luck!"</p>
+        <p>The object of the game is to find all the matching coloured squares. Once you have matched all of the coloured squares you win.<br><br>Press the "Start Game!" button to being playing the game. Good luck!</p>
         <button onclick="startGameButtonClick(event)">Start Game!</button>
     </div>
 </div>
