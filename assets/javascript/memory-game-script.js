@@ -54,6 +54,7 @@ function finishGameButtonClick() {
     Array.from(document.querySelectorAll(".card")).forEach((el) => el.classList.remove("disable-card-click"));
     Array.from(document.querySelectorAll(".card")).forEach((el) => el.classList.add("black"));
     gameWin = 0;
+    location.reload(true); //Force refresh of website due to bug with timer function constantly running after game close. Documentation located  here - "https://stackoverflow.com/questions/2099201/javascript-hard-refresh-of-current-page".
 }
 
 //Starts the game on user click.
