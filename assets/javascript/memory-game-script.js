@@ -9,9 +9,9 @@ var gameCurrentTimeCounter = document.getElementById("seconds-counter"); //Used 
 //Run the game logic. This only runs when the user has clicked the "Start Game" button hidden in "game-start-modal" hidden modal.
 function playGameClick(event) {
 
-    if (!gameRunning) return; //Needed a way to disable game from working until button click. Located documentation here - "https://stackoverflow.com/questions/7130114/disable-onclick-until-js-function-is-done"
+    if (!gameRunning) { return; } //Needed a way to disable game from working until button click. Located documentation here - "https://stackoverflow.com/questions/7130114/disable-onclick-until-js-function-is-done"
 
-    let target = event.currentTarget;
+    var target = event.currentTarget;
 
     if (target.className.includes("disable-card-click")) {
         return; //Required to stop the code breaking between 1st & 2nd clicks
@@ -25,12 +25,13 @@ function playGameClick(event) {
     }
     else if (cardClicked) {
         //Needed to add a timeout delay. This was to allow the 2nd clicked card to show the color before reverting back to black. Found an example here - "https://www.sitepoint.com/delay-sleep-pause-wait/#:~:text=The%20standard%20way%20of%20creating,()%20%3D%3E%20%7B%20console."
-        if (cardClicked.getAttribute("data-card-color") !== target.getAttribute("data-card-color")) setTimeout(() => {
-            cardClicked.className = cardClicked.className.replace("disable-card-click", "").trim() + " black";
-            target.className = target.className.replace("disable-card-click", "").trim() + " black";
-            cardClicked = null;
-        }, 550);
-        else if (cardClicked.getAttribute("data-card-color") === target.getAttribute("data-card-color")) {
+        if (cardClicked.getAttribute("data-card-color") !== target.getAttribute("data-card-color")) {
+            setTimeout(() => {
+                cardClicked.className = cardClicked.className.replace("disable-card-click", "").trim() + " black";
+                target.className = target.className.replace("disable-card-click", "").trim() + " black";
+                cardClicked = null;
+            }, 550);
+        } else if (cardClicked.getAttribute("data-card-color") === target.getAttribute("data-card-color")) {
             target.className += " disable-card-click";
             gameWin++;
             cardClicked = null;

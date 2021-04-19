@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,66 +13,70 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Colour Memory Game</title>
 </head>
+
 <body>
-    
-<h1 id="game-page-title">Colour Memory Game</h1>
 
-<div id="game-time-info-box">
-    <button id="open-modal" onclick="openGameStartGameModal()">Start Game</button>
-    <br>
-    <p>Current Time = <span id="seconds-counter">0 </span>Seconds</p>
-</div>
+    <h1 id="game-page-title">Colour Memory Game</h1>
 
-<!-- Hidden modal. Documentation located here - "https://www.w3schools.com/howto/howto_css_modals.asp" -->
-<div id="game-start-modal" class="modal">
-    <div class="modal-content">
-        <h2>Game Instructions</h2>
-        <p>The object of the game is to find all the matching coloured squares. Once you have matched all of the coloured squares you win.<br><br>Press the "Start Game!" button to being playing the game. Good luck!</p>
+    <div id="game-time-info-box">
+        <button id="open-modal" onclick="openGameStartGameModal()">Start Game</button>
         <br>
-        <button onclick="startGameButtonClick(event)">Start Game!</button>
+        <p>Current Time = <span id="seconds-counter">0 </span>Seconds</p>
     </div>
-</div>
 
-<div id="game-finish-modal" class="modal">
-    <div class="modal-content">
-        <h2>You Win!</h2>
-        <p>Congratulations you have found all the matched coloured squares and have won the game.</p>
-        <br>
-        <img src="assets/images/winner-medal.jpg" alt="Winner Medal!">
-        <br>
-        <br>
-        <button onclick="finishGameButtonClick()">Play Again?</button>
+    <!-- Hidden modal. Documentation located here - "https://www.w3schools.com/howto/howto_css_modals.asp" -->
+    <div id="game-start-modal" class="modal">
+        <div class="modal-content">
+            <h2>Game Instructions</h2>
+            <p>The object of the game is to find all the matching coloured squares. Once you have matched all of the
+                coloured squares you win.<br><br>Press the "Start Game!" button to being playing the game. Good luck!
+            </p>
+            <br>
+            <button onclick="startGameButtonClick(event)">Start Game!</button>
+        </div>
     </div>
-</div>
 
-<div class="row">
-    <div data-card-color="red" class="card red black" onclick="playGameClick(event)"></div>
-    <div data-card-color="teal" class="card teal black" onclick="playGameClick(event)"></div>
-    <div data-card-color="purple" class="card purple black" onclick="playGameClick(event)"></div>
-    <div data-card-color="pink" class="card pink black" onclick="playGameClick(event)"></div>
-</div>
+    <div id="game-finish-modal" class="modal">
+        <div class="modal-content">
+            <h2>You Win!</h2>
+            <p>Congratulations you have found all the matched coloured squares and have won the game.</p>
+            <br>
+            <img src="assets/images/winner-medal.jpg" alt="Winner Medal!">
+            <br>
+            <br>
+            <button onclick="finishGameButtonClick()">Play Again?</button>
+        </div>
+    </div>
 
-<div class="row">
-    <div data-card-color="pink" class="card pink black" onclick="playGameClick(event)"></div>
-    <div data-card-color="orange" class="card orange black" onclick="playGameClick(event)"></div>
-    <div data-card-color="blue" class="card blue black" onclick="playGameClick(event)"></div>
-    <div data-card-color="orange" class="card orange black" onclick="playGameClick(event)"></div>
-</div>
+    <div class="row">
+        <div data-card-color="red" class="card red black" onclick="playGameClick(event)"></div>
+        <div data-card-color="teal" class="card teal black" onclick="playGameClick(event)"></div>
+        <div data-card-color="purple" class="card purple black" onclick="playGameClick(event)"></div>
+        <div data-card-color="pink" class="card pink black" onclick="playGameClick(event)"></div>
+    </div>
 
-<div class="row">
-    <div data-card-color="green" class="card green black" onclick="playGameClick(event)"></div>
-    <div data-card-color="teal" class="card teal black" onclick="playGameClick(event)"></div>
-    <div data-card-color="green" class="card green black" onclick="playGameClick(event)"></div>
-    <div data-card-color="purple" class="card purple black" onclick="playGameClick(event)"></div>
-</div>
+    <div class="row">
+        <div data-card-color="pink" class="card pink black" onclick="playGameClick(event)"></div>
+        <div data-card-color="orange" class="card orange black" onclick="playGameClick(event)"></div>
+        <div data-card-color="blue" class="card blue black" onclick="playGameClick(event)"></div>
+        <div data-card-color="orange" class="card orange black" onclick="playGameClick(event)"></div>
+    </div>
 
-<div class="row">
-    <div data-card-color="red" class="card red black" onclick="playGameClick(event)"></div>
-    <div data-card-color="aqua" class="card aqua black" onclick="playGameClick(event)"></div>
-    <div data-card-color="blue" class="card blue black" onclick="playGameClick(event)"></div>
-    <div data-card-color="aqua" class="card aqua black" onclick="playGameClick(event)"></div>
-</div>
+    <div class="row">
+        <div data-card-color="green" class="card green black" onclick="playGameClick(event)"></div>
+        <div data-card-color="teal" class="card teal black" onclick="playGameClick(event)"></div>
+        <div data-card-color="green" class="card green black" onclick="playGameClick(event)"></div>
+        <div data-card-color="purple" class="card purple black" onclick="playGameClick(event)"></div>
+    </div>
 
-<script src="assets/javascript/memory-game-script.js"></script>
+    <div class="row">
+        <div data-card-color="red" class="card red black" onclick="playGameClick(event)"></div>
+        <div data-card-color="aqua" class="card aqua black" onclick="playGameClick(event)"></div>
+        <div data-card-color="blue" class="card blue black" onclick="playGameClick(event)"></div>
+        <div data-card-color="aqua" class="card aqua black" onclick="playGameClick(event)"></div>
+    </div>
+
+    <script src="assets/javascript/memory-game-script.js"></script>
 </body>
+
 </html>

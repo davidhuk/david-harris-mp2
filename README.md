@@ -54,7 +54,7 @@ The aim of this project is to build a fully interactive front-end only website u
 - Feature 2 – “Memory-based Card Game”. This will be the bulk of the content of the website. There will be a 4 x 4 flip card-based memory game. The object of the game will be to correctly match all pairs of cards in as least moves as possible.
 - Feature 3 – “Total Time Taken Timer”. There will be a timer starting from 0 seconds that will start counting when the user starts the game. This will enable the user to track the time it takes them to complete the game.
 
-### Features Left To Implement
+### Features Left to Implement
 - I would like to have a way to display the total time it took for the user to complete the game on the "win modal pop-up". I tried to get this coded but there was a bug on the timer that meant the variable's seconds kept getting tracked. This meant that the data shown was always wrong. I ran out of time to get this fully working.
 - I would like to have a way to display the lowest total time taken for the user on a game session. They could use this to compare visually and try to beat their score. I was not able to get this coded within the time frame for the same issue as before. There was a bug with the timer meaning it kept on running after game win, this breaking this feature.
 - I would like to have a way to randomise the game colours on each play. This would give the user more fun when playing the game on multiple playthroughs due to being a random layout instead of the same colour locations each time.
@@ -129,8 +129,9 @@ The aim of this project is to build a fully interactive front-end only website u
 - Smaller device, landscape mode. On smaller devices such as mobiles and smaller tablets, the game does not scale well on landscape mode. I have tried a few different styles and layouts to re-size and scale the content, but I cannot really get the game to fit and be playable. I have built and designed this game to be mainly focused and run-in portrait mode. I have tested this on many different sized phones including iPhone 7, iPhone X, iPhone XR & a few different smaller Android mobiles. While in portrait mode the game appears fine as is fully playable at a decent size.
 
 ### Testing Tools Used
-- [W3C Markup Validation Service:](https://validator.w3.org/) I used this website to test, validate, highlight, and fix errors in my HTML code.
-- [W3C CSS Validation Service:](http://jigsaw.w3.org/css-validator/) I used this website to test, validate, highlight, and fix errors in my CSS code.
+- [W3C Markup Validation Service:](https://validator.w3.org/) I used this website to test, validate, highlight, and fix errors in my HTML code. The final code has passed all checks and has produced the result - "Document checking completed. No errors or warnings to show.".
+- [W3C CSS Validation Service:](http://jigsaw.w3.org/css-validator/) I used this website to test, validate, highlight, and fix errors in my CSS code. The final code has passed all checks and has produced the result - "Congratulations! No Error Found.".
+- [JSLint:](https://jslint.com/) I used this website to test, validate, highlight, and fix errors in my JavaScript code.
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) I used this tool to test my website, validate, highlight, and fix various errors in all my code. This was mainly used to highlight potential miss-code with current best practices.
 - [Responsinator](http://www.responsinator.com/) I used this emulation tool to enable me to perform testing on multiple device viewpoints at the same time. It helped me to made decisions during the build process.
 
@@ -196,6 +197,6 @@ Time management Issues & Initial Project Miss-Scoped. This module focuses on the
 
 I had to make the tough choice to sacrifice time spent on the front-end design, HTML, CSS etc. I found that the more I learnt, tried, and built with JavaScript, the more problems I encountered. This led to more time learning, building, and testing. This then impacted the deadline and made me have to re-scope and aim for a more basic designed game.
 
-Overall, I am very happy with the progress I have made with JavaScript. The build for this game has been very challanging, many times I hit dead-end walls with ideas I have had, but once researched, 1. The ideas do not work due to the design of the game logic, or 2. Needs a lot more advanced features and logic flow to run, meaning lots of time for something that I thoughts would be a simple fix.
+Overall, I am very happy with the progress I have made with JavaScript. The build for this game has been very challenging, many times I hit dead-end walls with ideas I have had, but once researched, 1. The ideas do not work due to the design of the game logic, or 2. Needs a lot more advanced features and logic flow to run, meaning lots of time for something that I thoughts would be a simple fix.
 
 If I had the chance to start this project over with a fresh timescales & deadline, with my new understanding of JavaScript, I would aim to have different features, aim to have smaller separate functions that can be called upon independently. I finally understood why having separate functions in JavaScript is best practice is and is a good idea, unfortunately this was past the point of new return of timescales for delivery during this project. This was a double-edged sword though; I am partly glad that I made a new coder mistake of too much logic within on function early on in my career as it taught me a harsh lesson and forced me into stressful situations but forced me to learn a lot at a rapid rate to fix the mistakes.

@@ -12,7 +12,9 @@ h1, h2 {text-decoration: underline;}
 
 #game-finish-modal p {font-size: larger;}
 
-#game-time-info-box button, #game-start-modal button, #game-finish-modal button {
+#game-time-info-box button,
+#game-start-modal button,
+#game-finish-modal button {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
@@ -20,7 +22,9 @@ h1, h2 {text-decoration: underline;}
     background: green;
 }
 
-#game-time-info-box button:hover, #game-start-modal button:hover, #game-finish-modal button:hover {box-shadow: inset 0px 0px 0px 5px yellow;}
+#game-time-info-box button:hover,
+#game-start-modal button:hover,
+#game-finish-modal button:hover {box-shadow: inset 0px 0px 0px 5px yellow;}
 
 .row {text-align: center;}
 
