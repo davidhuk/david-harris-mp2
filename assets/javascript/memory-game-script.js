@@ -9,7 +9,10 @@ var gameCurrentTimeCounter = document.getElementById("seconds-counter"); //Used 
 //Run the game logic. This only runs when the user has clicked the "Start Game" button hidden in "game-start-modal" hidden modal.
 function playGameClick(event) {
 
-    if (!gameRunning) { return; } //Needed a way to disable game from working until button click. Located documentation here - "https://stackoverflow.com/questions/7130114/disable-onclick-until-js-function-is-done"
+    //Needed a way to disable game from working until button click. Located documentation here - "https://stackoverflow.com/questions/7130114/disable-onclick-until-js-function-is-done"
+    if (!gameRunning) {
+        return;
+    }
 
     var target = event.currentTarget;
 
@@ -22,18 +25,17 @@ function playGameClick(event) {
     if (!cardClicked) {
         target.className += " disable-card-click";
         cardClicked = target;
-    }
-    else if (cardClicked) {
+    } else if (cardClicked) {
         //Needed to add a timeout delay. This was to allow the 2nd clicked card to show the color before reverting back to black. Found an example here - "https://www.sitepoint.com/delay-sleep-pause-wait/#:~:text=The%20standard%20way%20of%20creating,()%20%3D%3E%20%7B%20console."
         if (cardClicked.getAttribute("data-card-color") !== target.getAttribute("data-card-color")) {
-            setTimeout(() => {
+            setTimeout(function () {
                 cardClicked.className = cardClicked.className.replace("disable-card-click", "").trim() + " black";
                 target.className = target.className.replace("disable-card-click", "").trim() + " black";
                 cardClicked = null;
             }, 550);
         } else if (cardClicked.getAttribute("data-card-color") === target.getAttribute("data-card-color")) {
             target.className += " disable-card-click";
-            gameWin++;
+            gameWin = gameWin + 1;
             cardClicked = null;
         }
     }
@@ -58,13 +60,6 @@ function finishGameButtonClick() {
     location.reload(true); //Force refresh of website due to bug with timer function constantly running after game close. Documentation located  here - "https://stackoverflow.com/questions/2099201/javascript-hard-refresh-of-current-page".
 }
 
-//Starts the game on user click.
-function startGameButtonClick() {
-    gameStartModal.style.display = "none";
-    gameRunning = true; //Used to trigger the game start condition.
-    startGamePlayedSecondsTimer(); //Used to call the second timer count on game start click.
-}
-
 //Researched JavaScript count timers. Documentation found here – "https://stackoverflow.com/questions/37187504/javascript-second-counter".
 function startGamePlayedSecondsTimer() {
     function incrementSeconds() {
@@ -72,4 +67,11 @@ function startGamePlayedSecondsTimer() {
         gameCurrentTimeCounter.innerText = seconds + " ";
     }
     setInterval(incrementSeconds, 1000);
+}
+
+//Starts the game on user click.
+function startGameButtonClick() {
+    gameStartModal.style.display = "none";
+    gameRunning = true; //Used to trigger the game start condition.
+    startGamePlayedSecondsTimer(); //Used to call the second timer count on game start click.
 }
