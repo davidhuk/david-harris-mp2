@@ -132,8 +132,9 @@ The aim of this project is to build a fully interactive front-end only website u
 - [W3C Markup Validation Service:](https://validator.w3.org/) I used this website to test, validate, highlight, and fix errors in my HTML code. The final code has passed all checks and has produced the result - "Document checking completed. No errors or warnings to show.".
 - [W3C CSS Validation Service:](http://jigsaw.w3.org/css-validator/) I used this website to test, validate, highlight, and fix errors in my CSS code. The final code has passed all checks and has produced the result - "Congratulations! No Error Found.".
 - [JSLint:](https://jslint.com/) I used this website to test, validate, highlight, and fix errors in my JavaScript code.
-- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) I used this tool to test my website, validate, highlight, and fix various errors in all my code. This was mainly used to highlight potential miss-code with current best practices.
 - [Responsinator](http://www.responsinator.com/) I used this emulation tool to enable me to perform testing on multiple device viewpoints at the same time. It helped me to made decisions during the build process.
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) I used this tool to test my website, validate, highlight, and fix various errors in all my code. This was mainly used to highlight potential miss-code with current best practices with a 99 % score. The score reduction is due to third-party Google Fonts code, this is required for the custom font style. The results would be 100%  otherwise. Results attached as screenshot below.
+<img src="assets/images/google-lighthouse-test-results.jpg">
 
 ## Deployment
 
