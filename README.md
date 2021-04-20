@@ -47,6 +47,10 @@ The aim of this project is to build a fully interactive front-end only website u
 - [Mobile View Wireframe](assets/wireframes/wireframe-mobile-view.pdf)
 - [Tablet View Wireframe](assets/wireframes/wireframe-tablet-view.pdf)
 
+The live site appears different from the original wireframe. This is by choice due to timescales for the project delivery deadline. This project was focused on the JavaScript, where I chose to focus my time learning, building, and testing.
+
+The overall design is basic by choice. If I had more time, I would have focused and redesigned the site to add some more flare to the CSS and potentially add back in a front-end framework, Bootstrap for example.
+
 ## Features
 
 ### Existing Features
@@ -119,6 +123,14 @@ The aim of this project is to build a fully interactive front-end only website u
 - Laptop 15-inch monitor @1920 x 1080p resolution. Tested the game many times throughout the build process. The game always appears fine on this screen size.
 - Responsinator (Portrait mode). I used this site to test many emulated device sizes (with portrait mode) many times throughout the build process. The game always appears fine in portrait mode.
 
+## Deployment Testing
+- I have tested my live site that is hosted on GitHub Pages - "https://github.com/davidhuk/david-harris-mp2".
+- I checked and confirmed that the code is the same as the code matches the same code in the IDE.
+- I fully tested the game on a laptop, desktop and mobile to make sure the game is fully function in the same way as in the IDE.
+- I fully tested and confirmed that there are no errors with the code when playing the game or accessing the site.
+- I run the live code via HTML, CSS & JavaScript testing tools to confirm the code passes the tests still.
+- I am happy the live site is deployed in a working state that I am happy with.
+
 ### Errors During Testing
 - Bootstrap, Grid Layout, Multiple Stacked Images: I struggled with getting 2 x images to stack over each other, take up the same size, remain hidden then flip. I encountered many problems with grid alignment at various view sizes and layouts. I ended up spending way too much time troubleshooting HTML, CSS, Bootstrap. This was detrimental to the time scale for project deadline and was not a requirement as this project is focused on the JavaScript. I decided to remove Bootstrap and the images.
 - JavaScript: As the game needed to match 2 x colours, I needed a way to get HTML elements and compare them. I tried to use the class names, but it was not as simple as accessing by class name as this would mean I would have to code 8 or 16 different logic. I did some research and it seemed like using data type would be a basic method that I could use for the game. I used the following links - "https://www.w3schools.com/tags/att_data-.asp" & "https://stackoverflow.com/questions/20030162/getting-data-attribute-for-onclick-event-for-an-html-element" for guidance.
@@ -136,7 +148,7 @@ The aim of this project is to build a fully interactive front-end only website u
 - JSLint - Error 2 "Function out of scope". Researched and fixed by moving code as found here "https://stackoverflow.com/questions/34614490/jslint-out-of-scope-error-due-to-function-ordering".
 - JSLint - Error 3 "Expected 'function' and instead saw '=>'.". Researched and fixed by modifying "SetTimeOut =>" to "setTimeout(function ()" as found here "https://www.w3schools.com/jsref/met_win_settimeout.asp".
 - JSLint - Testing results. I have fully tested, changed JavaScript code, and got the code to a pass within JSLint. This is with using the parameters of "Assume in a browser" & "Tolerate long lines of code". I enabled these for JSLint as the code will always be run in a browser, aka Desktop and IPhone, also the long line of code error is due the comment in my code which a required for the project review to show my working and note where I have worked on code etc. I understand this is not best practice but due to project submissions requiring comments, I cannot get rid of the long code JSLint error.
-- [Responsinator](http://www.responsinator.com/) I used this emulation tool to enable me to perform testing on multiple device viewpoints at the same time. It helped me to made decisions during the build process.
+- [Responsinator](http://www.responsinator.com/) I used this emulation tool to enable me to perform testing on multiple device viewpoints at the same time. I focused my design to have this game play in portrait orientation. I understand that it is not best played in landscape mode. Given time, I would redesign this via a front-end framework to allow some scaling for landscape mode but did not have the time before the project deadline submission.
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) I used this tool to test my website, validate, highlight, and fix various errors in all my code. This was mainly used to highlight potential miss-code with current best practices with a 99 % score. The score reduction is due to third-party Google Fonts code, this is required for the custom font style. The results would be 100%  otherwise. Results attached as screenshot below.
 <img src="assets/images/google-lighthouse-test-results.jpg">
 
